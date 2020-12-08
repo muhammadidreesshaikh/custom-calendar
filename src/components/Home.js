@@ -24,8 +24,10 @@ function Home() {
     };
 
     const active = (e) => {
-        console.log(e.target.innerHTML);
-        // setActiveTime();
+        console.log(e.target.id);
+        setActiveTime(e.target.id);
+        // document.querySelector('.time-text').classList.remove('active');
+        // document.getElementById(e.target.id).classList.toggle('active');
     }
 
     const formatDate = (selectedDate) => {
@@ -53,7 +55,7 @@ function Home() {
     return(
         <div className="container">
             <div className="row justify-content-center">
-                <div className="col-4 className=">
+                <div className="col-12 col-md-4">
                     <div className="card my-5 px-3 py-2">
                         <MuiPickersUtilsProvider utils={DateFnsUtils}>
                             <KeyboardDatePicker
@@ -78,8 +80,11 @@ function Home() {
                                     allTimings.length > 0 ?
                                     allTimings.map((item, i) => {
                                         return(
-                                            <div className="col-4">
-                                                <p className="time-text">{item}</p>
+                                            <div className="col-4" key={i}>
+                                                <p id={i} 
+                                                    className={"time-text " + (activeTime == i ? 'active' : '')}
+                                                    onClick={(e)=> active(e)}>{item}
+                                                </p>
                                             </div>
                                         )
                                     })
