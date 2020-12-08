@@ -1,15 +1,13 @@
 import React from 'react';
 import '../assets/css/home.css';
-
 import 'date-fns';
 import DateFnsUtils from '@date-io/date-fns';
-
 import {
   MuiPickersUtilsProvider,
   KeyboardTimePicker,
   KeyboardDatePicker,
 } from '@material-ui/pickers';
-
+import moment from 'moment'
 import data from '../data/data.json'
 
 class Home extends React.Component {
@@ -20,10 +18,14 @@ class Home extends React.Component {
 
         this.state = {
             data: [],
-            selectedDate: new Date(),
+            selectedDate: moment(new Date()).format('YYYY-MM-DD'),
             activeTime: '',
             allTimings: ''
         };
+    }
+
+    componentDidMount() {
+        // init method
     }
 
     active = (e) => {
@@ -31,16 +33,14 @@ class Home extends React.Component {
     }
 
     formatDate = (selectedDate) => {
-        let date = new Date(selectedDate);
-        let finalDate = date.toLocaleDateString().split("/").reverse();
-        let formattedDate = finalDate[0] + '-' + finalDate[2] + '-' + finalDate[1];
+        return moment(selectedDate).format('YYYY-MM-DD');
+    }
 
-        return formattedDate;
+    handleChangeDate = (event) => {
+        this.setState({ selectedDate: this.formatDate(event) });
     }
 
     getTimeSchedule = (event) => {
-        this.setState({ selectedDate: event })
-
         data.forEach(element => {
             if(this.formatDate(element.Date) == this.formatDate(event)) {
                 this.allTimes.push(element.Time);
@@ -60,12 +60,12 @@ class Home extends React.Component {
                                 <KeyboardDatePicker
                                     disableToolbar
                                     variant="inline"
-                                    format="MM/dd/yyyy"
+                                    format="dd/MM/yyyy"
                                     margin="normal"
                                     id="date-picker-inline"
                                     label="Select Date"
                                     value={this.state.selectedDate}
-                                    onChange={this.getTimeSchedule}
+                                    onChange={(e) => {this.getTimeSchedule(e); this.handleChangeDate(e)}}
                                     KeyboardButtonProps={{
                                         'aria-label': 'change date',
                                     }}
