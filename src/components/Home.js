@@ -1,9 +1,7 @@
 import React from 'react';
-import Slider from '../shared/Slider';
 import '../assets/css/home.css';
 
 import 'date-fns';
-import Grid from '@material-ui/core/Grid';
 import DateFnsUtils from '@date-io/date-fns';
 
 import {
@@ -12,13 +10,45 @@ import {
   KeyboardDatePicker,
 } from '@material-ui/pickers';
 
+import data from '../data/data.json'
+
 function Home() {
 
-    const [selectedDate, setSelectedDate] = React.useState(new Date('2014-08-18T21:11:54'));
+    const [selectedDate, setSelectedDate] = React.useState(new Date());
+    const [activeTime, setActiveTime] = React.useState('');
+    const [allTimings, setAllTimings] = React.useState([]);
+    let allTimes = [];
 
     const handleDateChange = (date) => {
         setSelectedDate(date);
     };
+
+    const active = (e) => {
+        console.log(e.target.innerHTML);
+        // setActiveTime();
+    }
+
+    const formatDate = (selectedDate) => {
+        let date = new Date(selectedDate);
+        let finalDate = date.toLocaleDateString().split("/").reverse();
+        let formattedDate = finalDate[0] + '-' + finalDate[2] + '-' + finalDate[1];
+
+        return formattedDate;
+    }
+
+    const getTimeSchedule = (event) => {
+        setSelectedDate(event);
+
+        data.forEach(element => {
+            if(formatDate(element.Date) == formatDate(event)) {
+                console.log(element.Time);
+                allTimes.push(element.Time);
+            }
+        });
+
+        setAllTimings(allTimes);
+        console.log(allTimes);
+    }
 
     return(
         <div className="container">
@@ -34,7 +64,7 @@ function Home() {
                                 id="date-picker-inline"
                                 label="Select Date"
                                 value={selectedDate}
-                                onChange={handleDateChange}
+                                onChange={getTimeSchedule}
                                 KeyboardButtonProps={{
                                     'aria-label': 'change date',
                                 }}
@@ -44,24 +74,22 @@ function Home() {
                         <div className="timings">
                             <p className="text-info"><small>Select available time</small></p>
                             <div className="row">
-                                <div className="col-4">
-                                    <p className="time-text">9:30 AM</p>
-                                </div>
-                                <div className="col-4">
-                                    <p className="time-text active">11:30 AM</p>
-                                </div>
-                                <div className="col-4">
-                                    <p className="time-text">2:30 pM</p>
-                                </div>
-                                <div className="col-4">
-                                    <p className="time-text">9:30 AM</p>
-                                </div>
-                                <div className="col-4">
-                                    <p className="time-text">11:30 AM</p>
-                                </div>
-                                <div className="col-4">
-                                    <p className="time-text">2:30 pM</p>
-                                </div>
+                                {
+                                    allTimings.length > 0 ?
+                                    allTimings.map((item, i) => {
+                                        return(
+                                            <div className="col-4">
+                                                <p className="time-text">{item}</p>
+                                            </div>
+                                        )
+                                    })
+                                    :
+                                    <div className="col-12">
+                                        <p className="pt-2 text-muted">
+                                            <small>No Timings available</small>
+                                        </p>
+                                    </div>
+                                }
                             </div>
                             <a className="schedule-btn">Check Schedule</a>
                         </div>

@@ -1,0 +1,274 @@
+[
+    {
+        "Date": "2020-12-07",
+        "Time": "17:00:00",
+        "Duration": 30,
+        "AppointmentInfo": {
+            "Appts": [
+                {
+                    "Pools": [
+                        {
+                            "Options": [
+                                {
+                                    "Date": "2020-12-07",
+                                    "Time": "17:00:00",
+                                    "Duration": 30,
+                                    "VisitType": {
+                                        "ID": "    2997",
+                                        "Type": "INTERNAL"
+                                    },
+                                    "Agent": {
+                                        "ID": "    5321",
+                                        "Type": "INTERNAL"
+                                    },
+                                    "Department": {
+                                        "ID": "160199991",
+                                        "Type": "INTERNAL"
+                                    }
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    },
+    {
+        "Date": "2020-12-07",
+        "Time": "17:30:00",
+        "Duration": 30,
+        "AppointmentInfo": {
+            "Appts": [
+                {
+                    "Pools": [
+                        {
+                            "Options": [
+                                {
+                                    "Date": "2020-12-07",
+                                    "Time": "17:30:00",
+                                    "Duration": 30,
+                                    "VisitType": {
+                                        "ID": "    2997",
+                                        "Type": "INTERNAL"
+                                    },
+                                    "Agent": {
+                                        "ID": "    5321",
+                                        "Type": "INTERNAL"
+                                    },
+                                    "Department": {
+                                        "ID": "160199991",
+                                        "Type": "INTERNAL"
+                                    }
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    },
+    {
+        "Date": "2020-12-07",
+        "Time": "18:00:00",
+        "Duration": 30,
+        "AppointmentInfo": {
+            "Appts": [
+                {
+                    "Pools": [
+                        {
+                            "Options": [
+                                {
+                                    "Date": "2020-12-07",
+                                    "Time": "18:00:00",
+                                    "Duration": 30,
+                                    "VisitType": {
+                                        "ID": "    2997",
+                                        "Type": "INTERNAL"
+                                    },
+                                    "Agent": {
+                                        "ID": "    5321",
+                                        "Type": "INTERNAL"
+                                    },
+                                    "Department": {
+                                        "ID": "160199991",
+                                        "Type": "INTERNAL"
+                                    }
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    },
+    {
+        "Date": "2020-12-07",
+        "Time": "18:30:00",
+        "Duration": 30,
+        "AppointmentInfo": {
+            "Appts": [
+                {
+                    "Pools": [
+                        {
+                            "Options": [
+                                {
+                                    "Date": "2020-12-07",
+                                    "Time": "18:30:00",
+                                    "Duration": 30,
+                                    "VisitType": {
+                                        "ID": "    2997",
+                                        "Type": "INTERNAL"
+                                    },
+                                    "Agent": {
+                                        "ID": "    5321",
+                                        "Type": "INTERNAL"
+                                    },
+                                    "Department": {
+                                        "ID": "160199991",
+                                        "Type": "INTERNAL"
+                                    }
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    },
+    {
+        "Date": "2020-12-07",
+        "Time": "19:00:00",
+        "Duration": 30,
+        "AppointmentInfo": {
+            "Appts": [
+                {
+                    "Pools": [
+                        {
+                            "Options": [
+                                {
+                                    "Date": "2020-12-07",
+                                    "Time": "19:00:00",
+                                    "Duration": 30,
+                                    "VisitType": {
+                                        "ID": "    2997",
+                                        "Type": "INTERNAL"
+                                    },
+                                    "Agent": {
+                                        "ID": "    5321",
+                                        "Type": "INTERNAL"
+                                    },
+                                    "Department": {
+                                        "ID": "160199991",
+                                        "Type": "INTERNAL"
+                                    }
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    },
+    {
+        "Date": "2020-12-07",
+        "Time": "19:30:00",
+        "Duration": 30,
+        "AppointmentInfo": {
+            "Appts": [
+                {
+                    "Pools": [
+                        {
+                            "Options": [
+                                {
+                                    "Date": "2020-12-07",
+                                    "Time": "19:30:00",
+                                    "Duration": 30,
+                                    "VisitType": {
+                                        "ID": "    2997",
+                                        "Type": "INTERNAL"
+                                    },
+                                    "Agent": {
+                                        "ID": "    5321",
+                                        "Type": "INTERNAL"
+                                    },
+                                    "Department": {
+                                        "ID": "160199991",
+                                        "Type": "INTERNAL"
+                                    }
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    },
+    {
+        "Date": "2020-12-07",
+        "Time": "20:00:00",
+        "Duration": 30,
+        "AppointmentInfo": {
+            "Appts": [
+                {
+                    "Pools": [
+                        {
+                            "Options": [
+                                {
+                                    "Date": "2020-12-07",
+                                    "Time": "20:00:00",
+                                    "Duration": 30,
+                                    "VisitType": {
+                                        "ID": "    2997",
+                                        "Type": "INTERNAL"
+                                    },
+                                    "Agent": {
+                                        "ID": "    5321",
+                                        "Type": "INTERNAL"
+                                    },
+                                    "Department": {
+                                        "ID": "160199991",
+                                        "Type": "INTERNAL"
+                                    }
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    },
+    {
+        "Date": "2020-12-07",
+        "Time": "20:30:00",
+        "Duration": 30,
+        "AppointmentInfo": {
+            "Appts": [
+                {
+                    "Pools": [
+                        {
+                            "Options": [
+                                {
+                                    "Date": "2020-12-07",
+                                    "Time": "20:30:00",
+                                    "Duration": 30,
+                                    "VisitType": {
+                                        "ID": "    2997",
+                                        "Type": "INTERNAL"
+                                    },
+                                    "Agent": {
+                                        "ID": "    5321",
+                                        "Type": "INTERNAL"
+                                    },
+                                    "Department": {
+                                        "ID": "160199991",
+                                        "Type": "INTERNAL"
+                                    }
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+]
