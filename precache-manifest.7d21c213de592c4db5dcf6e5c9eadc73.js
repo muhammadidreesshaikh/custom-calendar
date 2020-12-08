@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "4f242660ffc2d45bc6baac5ce32ff404",
+    "revision": "3d06fbee1059f3d934bda2ba534ec2e5",
     "url": "/custom-calendar/index.html"
   },
   {
-    "revision": "64c6f5076440a143d49a",
+    "revision": "3f3448a0b2b9e313a061",
     "url": "/custom-calendar/static/css/2.2a86faee.chunk.css"
   },
   {
-    "revision": "b940befa155a6c38f669",
+    "revision": "2f91e5f8b671a6e39dee",
     "url": "/custom-calendar/static/css/main.b1b52e8f.chunk.css"
   },
   {
-    "revision": "64c6f5076440a143d49a",
-    "url": "/custom-calendar/static/js/2.fe328892.chunk.js"
+    "revision": "3f3448a0b2b9e313a061",
+    "url": "/custom-calendar/static/js/2.42985b2a.chunk.js"
   },
   {
     "revision": "6397acf4c5cafcd591a770ce33fc3e2f",
-    "url": "/custom-calendar/static/js/2.fe328892.chunk.js.LICENSE.txt"
+    "url": "/custom-calendar/static/js/2.42985b2a.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "b940befa155a6c38f669",
-    "url": "/custom-calendar/static/js/main.4120af9a.chunk.js"
+    "revision": "2f91e5f8b671a6e39dee",
+    "url": "/custom-calendar/static/js/main.04d64c7b.chunk.js"
   },
   {
     "revision": "bfe9c99d4f2dcf83e511",
