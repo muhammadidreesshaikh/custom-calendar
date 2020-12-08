@@ -19,15 +19,8 @@ function Home() {
     const [allTimings, setAllTimings] = React.useState([]);
     let allTimes = [];
 
-    const handleDateChange = (date) => {
-        setSelectedDate(date);
-    };
-
     const active = (e) => {
-        console.log(e.target.id);
         setActiveTime(e.target.id);
-        // document.querySelector('.time-text').classList.remove('active');
-        // document.getElementById(e.target.id).classList.toggle('active');
     }
 
     const formatDate = (selectedDate) => {
@@ -43,13 +36,11 @@ function Home() {
 
         data.forEach(element => {
             if(formatDate(element.Date) == formatDate(event)) {
-                console.log(element.Time);
                 allTimes.push(element.Time);
             }
         });
 
         setAllTimings(allTimes);
-        console.log(allTimes);
     }
 
     return(
