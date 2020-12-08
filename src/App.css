@@ -46,3 +46,8 @@ a{
   transition: 0.5s;
   color: var(--color-blue);
 }
+
+.MuiPickersDay-day:focus, .MuiIconButton-root:focus {
+  outline: none !important;
+  border: 0 !important;
+}
